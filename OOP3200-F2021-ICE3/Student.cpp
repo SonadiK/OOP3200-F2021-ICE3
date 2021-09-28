@@ -61,5 +61,5 @@ std::string Student::ToString()
     output_string += "Student ID: " + getStudentID() + "\n";
     output_string += "------------------------------------------------\n";
 
-    return "";
+    return  output_string;
 }

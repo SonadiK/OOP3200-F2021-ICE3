@@ -46,10 +46,9 @@ void SaysHello() const;
 virtual std::string ToString();
 private: 
     float m_age;
-std::string  m_firstName;
-std::string m_lastName;
-//std::string first_name_;
-//std::string last_name_;
+	std::string  m_firstName;
+	std::string m_lastName;
+
 };
 
 #endif //_PERSON_H

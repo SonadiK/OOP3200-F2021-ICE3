@@ -78,7 +78,7 @@ void Person::setLastName(const std::string& value)
  */
 void Person::SaysHello() const
 {
-    std::cout << getFirstName() << "says Hello!"<< std::endl;;
+    std::cout << getFirstName() << " says Hello!"<< std::endl;;
 }
 
 /**
@@ -94,5 +94,6 @@ std::string Person::ToString()
     output_string += "Last Name:  " + getLastName() + "\n";
     output_string += "Age:        " + std::to_string(getAge()) + "\n";
     output_string += "------------------------------------------------\n";
-    return std::string();
+
+    return output_string;
 }

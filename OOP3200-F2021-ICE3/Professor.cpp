@@ -56,10 +56,10 @@ void Professor::Teaches() const
 std::string Professor::ToString()
 {
     std::string output_string;
-
+    output_string += Person::ToString();
     output_string += "------------------------------------------------\n";
     output_string += "Employee ID: " + getEmployeeID() + "\n";
     output_string += "------------------------------------------------\n";
 
-    return "";
+    return output_string;
 }

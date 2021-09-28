@@ -20,7 +20,7 @@
  * @param age
  */
 Person::Person(std::string first_name, std::string last_name, float age)
-	:m_age(age), first_name_(std::move(first_name)), last_name_(std::move(last_name))
+	:m_age(age), m_firstName(std::move(first_name)), m_lastName(std::move(last_name))
 {
 
 }

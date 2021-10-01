@@ -1,6 +1,7 @@
 /**
  * Project OOP3200-F2021_ICE3
  * @author Sonadi Kannangara
+ * Last Modified Date  30 September 2021
  * @version 1.0
  */
 #pragma once
@@ -12,10 +13,11 @@
 #include "Person.h"
 #include <string>
 
+ // Class declaration section.
 class Student: public Person {
 public: 
     
-/**
+/*
  * @param first_name
  * @param last_name
  * @param age
@@ -25,7 +27,7 @@ Student(const std::string& first_name, const std::string& last_name, float age, 
 
 std::string getStudentID() const;
     
-/**
+/*
  * @param value
  */
 void setStudentID(const std::string& value);

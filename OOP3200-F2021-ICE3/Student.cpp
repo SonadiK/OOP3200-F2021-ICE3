@@ -1,6 +1,7 @@
 /**
  * Project OOP3200-F2021_ICE3
  * @author Sonadi Kannangara
+ * Last Modified Date  30 September 2021
  * @version 1.0
  */
 
@@ -13,8 +14,8 @@
  * Student implementation
  */
 
-
-/**
+ // Class definition section
+/*
  * @param first_name
  * @param last_name
  * @param age
@@ -33,7 +34,7 @@ std::string Student::getStudentID() const
     return m_studentID;
 }
 
-/**
+/*
  * @param value
  */
 void Student::setStudentID(const std::string& value)
@@ -41,12 +42,12 @@ void Student::setStudentID(const std::string& value)
     m_studentID = value;
 }
 
-/**
+/*
  * @return void
  */
 void Student::Studies() const
 {
-    std::cout << getFirstName() << " is studying" << std::endl;
+    std::cout << getFirstName() << " is studying!" << std::endl;
 }
 
 /**
@@ -55,7 +56,7 @@ void Student::Studies() const
 std::string Student::ToString()
 {
     std:: string output_string;
-
+    //Output Banner
     output_string += Person::ToString();
     output_string += "------------------------------------------------\n";
     output_string += "Student ID: " + getStudentID() + "\n";

@@ -1,6 +1,7 @@
 /**
  * Project OOP3200-F2021_ICE3
  * @author Sonadi Kannangara
+ * Last Modified Date  30 September 2021
  * @version 1.0
  */
 
@@ -13,8 +14,8 @@
  * Professor implementation
  */
 
-
-/**
+ // Class definition section
+/*
  * @param first_name
  * @param last_name
  * @param age
@@ -34,7 +35,7 @@ std::string Professor::getEmployeeID() const
     return m_employeeID;
 }
 
-/**
+/*
  * @param value
  */
 void Professor::setEmployeeID(const std::string& value)
@@ -42,7 +43,7 @@ void Professor::setEmployeeID(const std::string& value)
     m_employeeID = value;
 }
 
-/**
+/*
  * @return void
  */
 void Professor::Teaches() const
@@ -56,6 +57,7 @@ void Professor::Teaches() const
 std::string Professor::ToString()
 {
     std::string output_string;
+    //Outbut Banner
     output_string += Person::ToString();
     output_string += "------------------------------------------------\n";
     output_string += "Employee ID: " + getEmployeeID() + "\n";
